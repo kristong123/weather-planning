@@ -1,0 +1,136 @@
+<!--
+  Weather Planner
+  A simple weather planner app that allows you to plan your events based on the weather.
+  This is the week view page.
+  Created by: Kris Tong, Ethan Chen, Emily Kim
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Planner</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="/images/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>Weather Planner</h1>
+        <img src="/images/logo.png" alt="Black and white calendar logo with a rain cloud shown on it" />
+      </div>
+      <div class="main-container">
+        <div class="sidebar">
+          <button
+            class="create-button"
+            onclick="location.href='automatic-event.html'"
+          >
+            New Event
+            <img src="/images/plus.png" alt="White plus icon within the new event button" />
+          </button>
+          <section class="events-list">
+            <h2>Planned Events</h2>
+          </section>
+        </div>
+        <section class="calendar">
+          <div class="calendar-container">
+            <div class="calendar-header">
+              <button class="prevMonth">&lt;</button>
+              <h2 class="monthDisplay">Week</h2>
+              <button class="nextMonth">&gt;</button>
+            </div>
+            <div class="weekdays">
+              <div>Sun, 1st</div>
+              <div>Mon, 2nd</div>
+              <div>Tue, 3rd</div>
+              <div>Wed, 4th</div>
+              <div>Thu, 5th</div>
+              <div>Fri, 6th</div>
+              <div>Sat, 7th</div>
+            </div>
+            <div class="calendarDays days">
+              <!-- Example week -->
+              <div class="day-week">
+                <div class="day-week-chunk">
+                  <div class="day-week-chunk-info">
+                    <img src="images/sunny.png" alt="Sunny Icon" />
+                    <span>9:00 AM</span>
+                  </div>
+                </div>
+                <div class="day-week-chunk">
+                  <div class="day-week-chunk-info">
+                    <img src="images/rain.png" alt="Rain Icon" />
+                    <span>2:30 PM</span>
+                  </div>
+                </div>
+              </div>
+              <div class="day-week">
+                <div class="day-week-chunk">
+                  <div class="day-week-chunk-info">
+                    <img src="images/cloudy.png" alt="Cloudy Icon" />
+                    <span>11:15 AM</span>
+                  </div>
+                </div>
+              </div>
+              <div class="day-week">
+                <div class="day-week-chunk">
+                  <div class="day-week-chunk-info">
+                    <img src="images/thunderstorm.png" alt="Thunderstorm Icon" />
+                    <span>4:45 PM</span>
+                  </div>
+                </div>
+              </div>
+              <div class="day-week">
+                <div class="day-week-chunk">
+                  <div class="day-week-chunk-info">
+                    <img src="images/partlyCloudy.png" alt="Partly Cloudy Icon" />
+                    <span>10:00 AM</span>
+                  </div>
+                </div>
+                <div class="day-week-chunk">
+                  <div class="day-week-chunk-info">
+                    <img src="images/windy.png" alt="Windy Icon" />
+                    <span>3:20 PM</span>
+                  </div>
+                </div>
+              </div>
+              <div class="day-week">
+                <div class="day-week-chunk">
+                  <div class="day-week-chunk-info">
+                    <img src="images/fog.png" alt="Fog Icon" />
+                    <span>8:30 AM</span>
+                  </div>
+                </div>
+              </div>
+              <div class="day-week">
+                <div class="day-week-chunk">
+                  <div class="day-week-chunk-info">
+                    <img src="images/snow.png" alt="Snow Icon" />
+                    <span>1:00 PM</span>
+                  </div>
+                </div>
+              </div>
+              <div class="day-week">
+                <div class="day-week-chunk">
+                  <div class="day-week-chunk-info">
+                    <img src="images/sunny.png" alt="Sunny Icon" />
+                    <span>5:15 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="view-change">
+        <select name="View" class="view-dropdown" onchange="location.href='month-view.html'">
+          <option value="week">Week</option>
+          <option value="month">Month</option>
+        </select>
+      </div>
+    </main>
+    <script src="index.js"></script>
+    <footer>© 2025 Weather Planner</footer>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!--
+  Weather Planner
+  A simple weather planner app that allows you to plan your events based on the weather.
+  This is the month view page.
+  Created by: Kris Tong, Ethan Chen, Emily Kim
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Planner</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="/images/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>Weather Planner</h1>
+        <img src="/images/logo.png" alt="Black and white calendar logo with a rain cloud shown on it" />
+      </div>
+      <div class="main-container">
+        <div class="sidebar">
+          <button class="create-button" onclick="location.href='automatic-event.html'">
+            New Event
+            <img src="/images/plus.png" alt="White plus icon within the new event button" />
+          </button>
+          <section class="events-list">
+            <h2>Planned Events</h2>
+          </section>
+        </div>
+        <div class="view-change">
+          <select name="View" class="view-dropdown" onchange="location.href='index.html'">
+            <div class="dropdown-content">
+              <option value="month">Month</option>
+              <option value="week">Week</option>
+            </div>
+          </select>
+        </div>
+        <section class="calendar">
+          <div class="calendar-container">
+            <div class="calendar-header">
+              <button class="prevMonth">&lt;</button>
+              <h2 class="monthDisplay">Month</h2>
+              <button class="nextMonth">&gt;</button>
+            </div>
+            <div class="weekdays">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div class="calendarDays days">
+              <div class="day">1</div>
+              <div class="day">2</div>
+              <div class="day">3</div>
+              <div class="day">4</div>
+              <div class="day">5</div>
+              <div class="day">6</div>
+              <div class="day">7</div>
+              <div class="day">8</div>
+              <div class="day">9</div>
+              <div class="day">10</div>
+              <div class="day">11</div>
+              <div class="day">12</div>
+              <div class="day">13</div>
+              <div class="day">14</div>
+              <div class="day">15</div>
+              <div class="day">16</div>
+              <div class="day">17</div>
+              <div class="day">18</div>
+              <div class="day">19</div>
+              <div class="day">20</div>
+              <div class="day">21</div>
+              <div class="day">22</div>
+              <div class="day">23</div>
+              <div class="day">24</div>
+              <div class="day">25</div>
+              <div class="day">26</div>
+              <div class="day">27</div>
+              <div class="day">28</div>
+              <div class="day">29</div>
+              <div class="day">30</div>
+              <div class="day">31</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="index.js"></script>
+    <footer>© 2025 Weather Planner</footer>
+  </body>
+</html>
